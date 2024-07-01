@@ -1,0 +1,31 @@
+.all_cards_main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 3vh;
+}
+
+@media (min-width: 769px) and (max-width:1024px){
+  .all_cards_main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 1024px) {
+  .all_cards_main {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .all_cards_main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .all_cards_main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin-top: 3vh;
+  }
+}

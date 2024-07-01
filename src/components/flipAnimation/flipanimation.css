@@ -1,0 +1,42 @@
+/* flipanimation.css */
+
+/* Container for the search text */
+.search-outer {
+  @apply flex items-center overflow-hidden; /* Ensure content doesn't overflow the container */
+  height: fit-content; /* Adjust based on the height of your text */
+}
+
+.search-text {
+  @apply flex;
+  position: relative;
+}
+
+.slideUp {
+  animation: slideUp 2s linear forwards; /* Animation for sliding up */
+}
+
+.slideDown {
+  animation: slideDown 2s linear forwards; /* Animation for sliding down */
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,115 @@
+.activity-card1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.activity-card1:hover::before {
+  transform: scale(1.1);
+}
+
+.activity-card1 > * {
+  position: relative;
+  z-index: 1;
+}
+
+.activity-card2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.activity-card2:hover::before {
+  transform: scale(1.1);
+}
+
+.activity-card2 > * {
+  position: relative;
+  z-index: 1;
+}
+
+.activity-card3a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.activity-card3a:hover::before {
+  transform: scale(1.1);
+}
+
+.activity-card3a > * {
+  position: relative;
+  z-index: 1;
+}
+
+.activity-card3b::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.activity-card3b:hover::before {
+  transform: scale(1.1);
+}
+
+.activity-card3b > * {
+  position: relative;
+  z-index: 1;
+}
+
+.activity-card3c::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.activity-card3c:hover::before {
+  transform: scale(1.1);
+}
+
+.activity-card3c > * {
+  position: relative;
+  z-index: 1;
+}
+
+.smallcaps {
+  font-variant: small-caps;
+}
+

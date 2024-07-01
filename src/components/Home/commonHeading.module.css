@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10vw;
+}
+
+.section1 {
+  border-left: 5px solid var(--primary);
+  padding-inline: 1vw;
+  font-variant: small-caps;
+}
+.section1 h3 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.section1 span {
+  color: var(--primary);
+}
+.section2 {
+  width: 30vw;
+  /* border: 1px solid red; */
+}
+.section2 p {
+  font-size: 1.1rem;
+  font-family: "Exo", sans-serif;
+}
+@media (max-width: 700px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+  }
+
+  .section2 {
+    display: none;
+  }
+
+  .section1 h3 {
+    font-size: 1.05rem;
+  }
+}

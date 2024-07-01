@@ -1,0 +1,91 @@
+.banner {
+  height: 19rem;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  font-family: var(--primary-font);
+}
+.banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.morph {
+  width: 30rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5rem;
+  padding: 30px 20px;
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  color: white;
+  border-radius: 5px;
+}
+.innerMorph {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.innerMorph h2 {
+  font-size: 1.3rem;
+}
+
+.innerMorph h3 {
+  font-size: 1rem;
+}
+
+.innerMorph p {
+  font-size: 0.8rem;
+}
+
+.innerMorph button {
+  background-color: white;
+  color: black;
+  width: fit-content;
+  padding: 7px 14px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+@media (max-width: 700px) {
+  .banner {
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+  }
+  .morph {
+    width: 70vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 10px 20px;
+    display: grid;
+    place-items: center;
+  }
+  .innerMorph h2 {
+    font-size: 1rem;
+  }
+
+  .innerMorph h3 {
+    font-size: 0.8rem;
+  }
+
+  .innerMorph p {
+    font-size: 0.6rem;
+  }
+  .innerMorph button {
+    background-color: white;
+    color: black;
+    width: fit-content;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    border-radius: 5px;
+  }
+}

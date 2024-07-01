@@ -1,0 +1,150 @@
+.plantrip {
+  background-image: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)),
+    url("../../../public/boat.png");
+  background-repeat: no-repeat;
+  background-size: 65vw 100vh;
+  background-position: center;
+}
+
+.roombutton {
+  filter: drop-shadow();
+}
+
+.fadeInLeft {
+  animation-name: fadeInleft;
+  animation-duration: 1s;
+}
+
+.group_selection_btn_wrapper {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.group_selection_btn {
+  width: fit-content;
+}
+
+.selected_query_wrapper {
+  flex-wrap: wrap;
+}
+
+.selected_query_values {
+  padding: 10px;
+  max-width: 180px;
+  width: 100%;
+  white-space: nowrap;
+}
+span.query_values_border {
+  width: 100%;
+  height: 6px;
+  display: block;
+  background-color: #ca1c26;
+  margin-top: 12px;
+}
+.search_for_destinations {
+  max-width: 705px;
+  width: 100%;
+  height: 49px;
+}
+
+.people_type_wrapper_outer {
+  margin-top: 39px;
+}
+
+.people_type_wrapper {
+  margin-top: 65px;
+}
+
+.close_plan_tip {
+  background-color: #FADDDD;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.close_plan_tip:hover {
+  background-color: #FFB5B5;
+}
+
+.styacount_wrapper {
+  min-height: 158px;
+  height: 100%;
+  max-width: 140px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.plan_trip_form_wrapper{
+  overflow: auto;
+  width: 100%;
+  height: 99vh;
+  padding-bottom: 100px;
+}
+
+.plan_trip_form_wrapper::-webkit-scrollbar{
+  opacity: 0;
+}
+
+.animation_class{
+  padding: 50px 10px 10px 10px;
+}
+
+@keyframes fadeInleft {
+  0% {
+    /* opacity: 0; */
+    transform: translateX(100%);
+  }
+
+  100% {
+    /* opacity: 1; */
+    transform: translateX(0%);
+  }
+}
+
+.fadeOutLeft {
+  animation-name: fadeOutleft;
+  animation-duration: 1s;
+}
+
+@keyframes fadeOutleft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+.people_type_wrapper,
+.moth_type_wrapper,
+.stay_count_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .flex.flex-col.gap-5.w-\[40\%\].font-Merri-sans.pt-5.xsm\:w-\[100\%\] {
+    width: 70%;
+}
+}
+@media (max-width: 570px) {
+  .plantrip {
+    background-image: url("../../../public/boat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 519px) {
+  .h-\[140px\].cursor-pointer.w-\[130px\].relative.border.\#CA1C261F.bg-white.rounded.xsm\:w-\[110px\].xsm\:h-\[120px\] {
+    width: 100%;
+  }
+  
+}

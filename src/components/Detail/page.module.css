@@ -1,0 +1,244 @@
+.gallery_main h2 {
+  font-size: 1.45rem;
+}
+
+.gallery_main img {
+  height: 9rem;
+}
+
+/* contact page  */
+
+.contact_main {
+  margin-top: 3vh;
+
+  border: 1px solid #01008036;
+  border-radius: 5px;
+}
+
+.contact_inner {
+  margin: 4px;
+  padding: 20px 40px;
+  box-shadow: 1.61px 2.01px 12px 0px #00000021;
+  border-radius: 4px;
+}
+
+.contact_inner h2 {
+  font-size: 2.076rem;
+  font-family: "Merriweather-Sans";
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact_inner span{
+  color: #ca1c26;
+}
+
+.contact_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.contact_inner li{
+  font-size: 14px !important;
+  font-weight: 500;
+}
+.faq_section_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq_contents {
+  padding: 20px 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1rem;
+}
+
+.form label {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  color: #000000;
+}
+
+.form>div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form input {
+  border: 1px solid #ca1c265e;
+  border-radius: 4px;
+  padding-block: 4px;
+  /* height: 28px; */
+  padding-inline: 10px;
+  outline: none;
+}
+
+.form button {
+  width: 100%;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 3px;
+  padding: 4px 0px;
+  font-weight: 600;
+}
+
+.form li {
+  font-size: 0.65rem;
+  list-style-type: disc;
+  margin-left: 1.4rem;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+
+.card_main {
+  display: flex;
+  gap: 20px;
+  width: 50vw;
+  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.card_main>div {
+  /* width: 50vw; */
+  animation: translateCards 15s linear infinite;
+  flex-shrink: 0.1;
+}
+
+.gallary_wrapper h2 {
+  width: fit-content;
+  font-size: 31.77px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ca1c26;
+}
+
+
+.overview_tab_content_wrapper .first_heading,
+.second_heading,
+.included_tab_content_wrapper h1,
+.policy_tab_content_wrapper h2{
+  font-size: 32.77px;
+  font-weight: 400;
+  color: #000000;
+
+}
+.amenities_section{
+  margin-top: 20px;
+}
+.amenities_section h2{
+  font-size: 20px;
+  font-weight: 600;
+ 
+}
+.amenities_section h3{
+  font-size: 20.82px;
+  font-weight: 500;
+}
+
+.overview_tab_content_wrapper .first_heading_description span,
+.second_heading_description span,
+.faq_contents p,
+.included_tab_content_wrapper li,
+.policy_tab_content_wrapper span,
+  .policy_tab_content_wrapper p{
+  font-size: 18px !important;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+
+@keyframes translateCards {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(calc(-50vw));
+    /* 100vw - card width */
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card_main>div {
+    width: 100%;
+  }
+}
+
+@media (max-width:768px) {
+  .contact_inner li{
+    font-size: 12px !important;
+  }
+  .contact_inner h2 {
+    font-size: 25px;
+  }
+  .gallary_wrapper h2 {
+    font-size: 25px;
+  }
+  .overview_tab_content_wrapper .first_heading,
+  .second_heading,
+  .included_tab_content_wrapper h1,
+  .policy_tab_content_wrapper h2{
+    font-size: 15px;
+  }
+  .amenities_section h3{
+    font-size: 15.5px;
+  }
+  .amenities_section h2{
+    font-size: 16px;
+  }
+  .overview_tab_content_wrapper .first_heading_description span,
+  .second_heading_description span,
+  .faq_contents p,
+  .included_tab_content_wrapper li,
+  .policy_tab_content_wrapper span,
+  .policy_tab_content_wrapper p{
+    font-size: 12px !important;
+  }
+  .card_main {
+    max-width: 700px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .card_main::-webkit-scrollbar {
+    opacity: 0;
+  }
+
+  .card_main>div {
+    animation: none;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .card_main {
+    max-width: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 519px) {
+  .contact_inner{
+    padding: 20px 10px;
+  }
+}

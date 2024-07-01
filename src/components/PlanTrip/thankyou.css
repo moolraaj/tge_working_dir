@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Merriweather-sans;
+  src: url(../../../public/fonts/MerriweatherSans.ttf);
+}
+
+.fadeInT {
+  animation-name: fadeInTop;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInTop {
+  0% {
+    /* opacity: 0; */
+    transform: translateY(-100%);
+  }
+
+  100% {
+    /* opacity: 1; */
+    transform: translateY(0%);
+  }
+}
+
+.fadeOutT {
+  animation-name: fadeOutTop;
+  animation-duration: 1s;
+}
+
+@keyframes fadeOutTop {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.thankyou_popup_wrapper {
+  max-width: 840px;
+  width: 100%;
+  min-height: 543px;
+  padding: 50px; 
+  font-family: Merriweather-sans;
+}
+.thankyou_heading {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 62.85px;
+}
+.thankyou_para{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25.14px;
+}
+
+@media (max-width:700px) {
+  .thankyou_popup_wrapper {
+    padding: 10px; 
+    min-height: 343px;
+  }
+
+  .thankyou_heading {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .thankyou_para{
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,135 @@
+.card_section_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-block: 3vh;
+  gap: 1vw;
+  height: 85vh;
+  position: relative;
+  padding-top: 20px;
+  /* z-index: -1; */
+}
+
+.card_section_main > div {
+  /* border: 1px solid red; */
+  height: 100%;
+}
+
+.vertical_cards {
+  /* border: 1px solid red; */
+  height: 85vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3.33vh;
+}
+
+.vertical_cards > div {
+  height: 25.3vh;
+  width: 100%;
+  position: relative;
+}
+
+.vertical_cards p {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  text-transform: capitalize;
+  color: white;
+  font-family: 'Merriweather-sans';
+  font-size: 22px;
+}
+
+.vertical_cards img {
+  height: 100%;
+  /* border: 2px solid black; */
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.anim_cards {
+  overflow-y: hidden;
+}
+
+.anim_cards span {
+  display: grid;
+  gap: 1vw;
+  grid-template-columns: repeat(3, 1fr);
+  animation: translateCards 35s linear infinite;
+}
+
+.places_card {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.places_card > div {
+  position: relative;
+}
+
+.places_card > div:nth-child(2n + 1) {
+  height: 33vh;
+}
+.places_card > div:nth-child(2n) {
+  height: 26vh;
+}
+.places_card img {
+  height: 100%;
+  border-radius: 15px;
+}
+.places2 > div:nth-child(2n + 1) {
+  height: 26vh;
+}
+.places2 > div:nth-child(2n) {
+  height: 33vh;
+}
+
+.places_card p {
+  position: absolute;
+  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  text-transform: capitalize;
+  font-size:22px;
+  font-family: 'Merriweather-sans';
+}
+.places2 p{
+  bottom: 7rem;
+}
+.places3 p{
+  bottom: 6rem;
+}
+@keyframes translateCards {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(calc(-110vh)); /* 100vw - card width */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .card_section_main {
+    display: grid;
+    grid-template-columns: unset;
+    margin-block: 3vh;
+    gap: 1vw;
+    height: fit-content;
+    width: 95vw;
+    overflow-x: auto;
+  }
+  .vertical_cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    width: 300vw;
+    overflow-x: auto;
+  }
+
+  .anim_cards {
+    display: none;
+  }
+}

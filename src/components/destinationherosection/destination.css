@@ -1,0 +1,38 @@
+.destinationbg{
+    background-image: url('../../../public/ladakh.jpg');
+    background-size: 100vw 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(50%);
+   
+}
+.scale-down-center {
+	-webkit-animation: scale-down-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+	        animation: scale-down-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
+}
+
+ @-webkit-keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+  }
+  @keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+  }
+  
+  .absolute_header_content{
+    width: 100%;
+    padding: 0px 10px;
+  }
