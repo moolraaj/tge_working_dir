@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import "./ContactUs.css";
-import { BASE_URL } from "@/helpers/baseurl";
+ 
 
 const CUSideSection = () => {
   const [allCategory, setallCategory] = useState([]);
